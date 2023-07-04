@@ -18,7 +18,7 @@ ENV TESTING 0
 
 ENV PYTHONPATH=/app
 
-COPY start.sh /app/
+COPY startup /app/startup
 COPY apis_instance /app/
 
 # Create the user
@@ -26,4 +26,4 @@ RUN groupadd --gid $USER_GID $USERNAME && useradd --uid $USER_UID --gid $USER_GI
 
 USER app
 
-CMD ["bash", "/app/start.sh"]
+CMD ["run-parts", "startup"]

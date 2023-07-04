@@ -1,0 +1,5 @@
+red() {
+	echo -e "\e[0;31;1m Running> $@ \e[0m"
+	$@
+	echo -e "\e[0;31;1m Done> $@ \e[0m"
+}
