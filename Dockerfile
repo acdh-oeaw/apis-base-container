@@ -22,8 +22,8 @@ COPY startup /app/startup
 COPY wsgi.py apis_instance /app/
 
 # Create the user
-RUN groupadd --gid $USER_GID $USERNAME && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && chown -R app /app /usr/local && pip install .
+RUN groupadd --gid $USER_GID $USERNAME && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && chown -R $USERNAME /app /usr/local && pip install .
 
-USER app
+USER $USERNAME
 
 CMD ["run-parts", "startup"]
