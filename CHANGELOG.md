@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.0.1...v0.1.0) (2023-08-17)
+
+
+### Features
+
+* add /app/local to PYTHONPATH for local dev setups ([470edbf](https://github.com/acdh-oeaw/apis-base-container/commit/470edbf9cef37584c93e2cb61422aea0bd96b0ca))
+* add command to remove stale contenttypes ([dedcf52](https://github.com/acdh-oeaw/apis-base-container/commit/dedcf5221da280c044643cf58236666e0467bcf1)), closes [#6](https://github.com/acdh-oeaw/apis-base-container/issues/6)
+* split python app and startup logic ([f1603af](https://github.com/acdh-oeaw/apis-base-container/commit/f1603afbd741f07ae0618362aa7be2f1460548c3))
+
 ## 0.0.1 (2023-07-07)
 
 
