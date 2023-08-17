@@ -16,7 +16,7 @@ ENV PYTHONUNBUFFERED 1
 ENV ENVIRONMENT prod
 ENV TESTING 0
 
-ENV PYTHONPATH=/app
+ENV PYTHONPATH=/app:/app/local
 
 COPY startup /startup
 COPY apis_instance /app/
