@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source /startup/common
+[[ $REMOVE_STALE_CONTENTTYPES == "True" ]] && red django-admin remove_stale_contenttypes --noinput --include-stale-apps -v 3
