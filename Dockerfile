@@ -18,12 +18,13 @@ ENV TESTING 0
 
 ENV PYTHONPATH=/app
 
-COPY startup /app/startup
-COPY wsgi.py apis_instance /app/
+COPY startup /startup
+COPY apis_instance /app/
+COPY apis /usr/local/bin/
 
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && chown -R $USERNAME /app /usr/local && pip install .
 
 USER $USERNAME
 
-CMD ["run-parts", "startup"]
+CMD ["/usr/local/bin/apis"]

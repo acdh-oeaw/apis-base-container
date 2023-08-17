@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source startup/common
+source /startup/common
 [[ $CREATE_RELATIONSHIPS == "True" ]] && red django-admin create_relationships

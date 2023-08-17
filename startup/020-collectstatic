@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source startup/common
+source /startup/common
 red django-admin collectstatic
