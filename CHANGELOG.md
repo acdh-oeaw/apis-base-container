@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.1.0...v0.1.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* install gunicorn ([a166c51](https://github.com/acdh-oeaw/apis-base-container/commit/a166c51b1f408c588159814affa3b322867404cb)), closes [#11](https://github.com/acdh-oeaw/apis-base-container/issues/11)
+
 ## [0.1.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.0.1...v0.1.0) (2023-08-17)
 
 
