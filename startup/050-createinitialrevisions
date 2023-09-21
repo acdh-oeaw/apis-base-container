@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source /startup/common
+[[ $CREATE_INITIAL_REVISIONS == "True" ]] && red django-admin createinitialrevisions
