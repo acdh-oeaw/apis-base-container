@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source /startup/common
-red django-admin collectstatic
+red django-admin collectstatic --noinput
