@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.1.1...v0.2.0) (2023-09-27)
+
+
+### Features
+
+* add initialrevsions Django command ([4a47d44](https://github.com/acdh-oeaw/apis-base-container/commit/4a47d44ce70a1dfa980ae2c4446361b66a9b1fdc))
+* add tmux to container ([5c18be9](https://github.com/acdh-oeaw/apis-base-container/commit/5c18be9ad8d00afc7d1fa3d5aaf545dec3ef7375))
+
+
+### Bug Fixes
+
+* add `--noinput` to collectstatic command ([d480d63](https://github.com/acdh-oeaw/apis-base-container/commit/d480d63b1c814c6cc831e4cf454ddc1be576e33b)), closes [#15](https://github.com/acdh-oeaw/apis-base-container/issues/15)
+
 ## [0.1.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.1.0...v0.1.1) (2023-08-21)
 
 
