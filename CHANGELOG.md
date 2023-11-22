@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.2.0...v0.2.1) (2023-11-22)
+
+
+### Bug Fixes
+
+* copy local startup files ([7b868a5](https://github.com/acdh-oeaw/apis-base-container/commit/7b868a542be298d8290e1d16025d050c8ff41353)), closes [#23](https://github.com/acdh-oeaw/apis-base-container/issues/23)
+* don't cache python files and disable pip version check ([cf2fdaf](https://github.com/acdh-oeaw/apis-base-container/commit/cf2fdafd91ea68b4c8e0113c096546443f9cc581)), closes [#20](https://github.com/acdh-oeaw/apis-base-container/issues/20)
+* remove apt cache files after installation ([05c0720](https://github.com/acdh-oeaw/apis-base-container/commit/05c0720650de311d53c14af24e2e6a4289c4bde7)), closes [#26](https://github.com/acdh-oeaw/apis-base-container/issues/26)
+* set gunicorn to be more verbose ([52f9dd6](https://github.com/acdh-oeaw/apis-base-container/commit/52f9dd677ff8b279a7d66e0e8c7d6ad3cdb15838)), closes [#21](https://github.com/acdh-oeaw/apis-base-container/issues/21)
+
 ## [0.2.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.1.1...v0.2.0) (2023-09-27)
 
 
