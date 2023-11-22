@@ -13,6 +13,10 @@ ENV PYTHONDONTWRITEBYTECODE 1
 # without being first buffered and that you can see the output of your application (e.g. django logs)
 # in real time. Equivalent to python -u: https://docs.python.org/3/using/cmdline.html#cmdoption-u
 ENV PYTHONUNBUFFERED 1
+# don't cache downloaded pip packages
+ENV PIP_NO_CACHE_DIR=1
+# disable version check of pip
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV ENVIRONMENT prod
 ENV TESTING 0
 
