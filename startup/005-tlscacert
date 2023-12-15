@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source /startup/common
+if ! [ -z "$ARZ_TLS_CACERT" ]; then
+	echo "-----BEGIN CERTIFICATE-----" >> $HOME/CA.pem
+	echo "$ARZ_TLS_CACERT" >> $HOME/CA.pem
+	echo "-----END CERTIFICATE-----" >> $HOME/CA.pem
+	echo "TLS_CIPHER_SUITE NORMAL:%VERIFY_ALLOW_SIGN_WITH_SHA1" >> $HOME/.ldaprc
+	echo "TLS_CACERT $HOME/CA.pem" >> $HOME/.ldaprc
+fi

@@ -26,7 +26,12 @@ COPY startup /startup
 COPY apis_instance /app/
 COPY apis /usr/local/bin/
 
-RUN cp startup/* /startup || true && groupadd --gid $USER_GID $USERNAME && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && chown -R $USERNAME /app /usr/local && pip install "gunicorn>=21.2.0" && pip install . && apt-get update && apt-get install -y tmux && rm -rf /var/lib/apt/lists/*
+RUN cp startup/* /startup || true && \
+	groupadd --gid $USER_GID $USERNAME && \
+	useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
+	chown -R $USERNAME /app /usr/local && \
+	apt-get update && apt-get install -y tmux libldap-dev libsasl2-dev && rm -rf /var/lib/apt/lists/* && \
+	pip install "gunicorn>=21.2.0" && pip install .
 
 USER $USERNAME
 
