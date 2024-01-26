@@ -28,7 +28,7 @@ COPY apis /usr/local/bin/
 
 RUN cp startup/* /startup || true && \
 	groupadd --gid $USER_GID $USERNAME && \
-	useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
+	useradd --uid $USER_UID --gid $USER_GID -m $USERNAME -s /usr/bin/bash && \
 	chown -R $USERNAME /app /usr/local && \
 	apt-get update && apt-get install -y tmux libldap-dev libsasl2-dev && rm -rf /var/lib/apt/lists/* && \
 	pip install "gunicorn>=21.2.0" && pip install .
