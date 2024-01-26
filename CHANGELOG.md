@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.2.1...v0.3.0) (2024-01-26)
+
+
+### Features
+
+* set user shell to bash ([5955f02](https://github.com/acdh-oeaw/apis-base-container/commit/5955f02e0b85760450f7f9bde1d3be27cd75c3f1))
+* ship with ldap libraries and ldap startup script ([c3c1402](https://github.com/acdh-oeaw/apis-base-container/commit/c3c14022a993b981b59e213c742c916682bc730e))
+
 ## [0.2.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.2.0...v0.2.1) (2023-11-22)
 
 
