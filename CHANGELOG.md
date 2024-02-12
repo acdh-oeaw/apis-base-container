@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.3.0...v0.4.0) (2024-02-12)
+
+
+### Features
+
+* include psql in container ([b23a900](https://github.com/acdh-oeaw/apis-base-container/commit/b23a900879df876d0d94f72f11fc05b199e64ab6))
+
 ## [0.3.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.2.1...v0.3.0) (2024-01-26)
 
 
