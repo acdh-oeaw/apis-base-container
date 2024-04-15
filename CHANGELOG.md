@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.4.0...v0.5.0) (2024-04-15)
+
+
+### Features
+
+* add a startup script to compile gettext messages ([8507656](https://github.com/acdh-oeaw/apis-base-container/commit/8507656481d292d41344ee60dca15ce7d991369d))
+* include gettext in container ([8dd241d](https://github.com/acdh-oeaw/apis-base-container/commit/8dd241dd19e33371f48bc64c42522135fb15f74d))
+
 ## [0.4.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.3.0...v0.4.0) (2024-02-12)
 
 
