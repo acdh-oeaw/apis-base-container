@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source /startup/common
+[[ $COMPILE_MESSAGES == "True" ]] && red django-admin compilemessages
