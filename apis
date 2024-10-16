@@ -1,3 +1,24 @@
 #!/bin/sh
 
-/usr/bin/run-parts /startup
+# check if the opentelemetry-instrument command is
+# available and if so, set the CMD env variable
+# this is later prepended to the command
+CMD=""
+if command -v opentelemetry-instrument 2>&1 > /dev/null; then
+	CMD="opentelemetry-instrument"
+fi
+
+# if the variable OTEL_SERVICE_NAME is *not* set,
+# but the variable HOSTNAME *is* set set the service
+# name based on that.
+# we expect the HOSTNAME to be in the format
+# apis-instance-foobar-b659fb54d-wt9zq and we
+# remove the last parts after the second to last
+# dash
+if [ -z "${OTEL_SERVICE_NAME+x}" ]; then
+  if [ -n "${HOSTNAME+x}" ]; then
+    export OTEL_SERVICE_NAME=$(echo $HOSTNAME | sed 's/-[[:alnum:]]*-[[:alnum:]]*$//')
+  fi
+fi
+
+$CMD /usr/bin/run-parts /startup
