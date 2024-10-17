@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.11-slim
 ARG USERNAME=app
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
@@ -30,7 +30,7 @@ RUN cp startup/* /startup || true && \
 	groupadd --gid $USER_GID $USERNAME && \
 	useradd --uid $USER_UID --gid $USER_GID -m $USERNAME -s /usr/bin/bash && \
 	chown -R $USERNAME /app /usr/local && \
-	apt-get update && apt-get install -y tmux libldap-dev libsasl2-dev postgresql-client-common postgresql-client gettext && rm -rf /var/lib/apt/lists/* && \
+	apt-get update && apt-get install -y tmux libpq-dev libldap-dev libsasl2-dev postgresql-client-common postgresql-client gettext gcc && rm -rf /var/lib/apt/lists/* && \
 	pip install uvicorn gunicorn && pip install .
 
 USER $USERNAME
