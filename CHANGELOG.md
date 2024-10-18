@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.0...v0.6.1) (2024-10-18)
+
+
+### Bug Fixes
+
+* install git in container ([6ef20c8](https://github.com/acdh-oeaw/apis-base-container/commit/6ef20c80d68afa5217d55be167eefefbbaf85895))
+
 ## [0.6.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.5.0...v0.6.0) (2024-10-18)
 
 
