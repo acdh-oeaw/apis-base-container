@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.5.0...v0.6.0) (2024-10-18)
+
+
+### Features
+
+* install and enable opentelementry ([4a0099a](https://github.com/acdh-oeaw/apis-base-container/commit/4a0099adb12928def75041b763f3657049479a67))
+* make container smaller by basing it on the -slim version ([601f65d](https://github.com/acdh-oeaw/apis-base-container/commit/601f65d9123fd37240cfcdeb68af082fccabbae4))
+* move to uvicorn ([66f6083](https://github.com/acdh-oeaw/apis-base-container/commit/66f608375e392077beca5eb57e827c714f0b9050))
+
 ## [0.5.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.4.0...v0.5.0) (2024-04-15)
 
 
