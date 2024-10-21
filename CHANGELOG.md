@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.1...v0.6.2) (2024-10-21)
+
+
+### Bug Fixes
+
+* switch back to gunicorn as the default application server ([0f2b08a](https://github.com/acdh-oeaw/apis-base-container/commit/0f2b08ae07ff7ec534d2475dbfd50d3cac4c6162))
+
 ## [0.6.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.0...v0.6.1) (2024-10-18)
 
 
