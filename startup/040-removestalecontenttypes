@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-source /startup/common
-[[ $REMOVE_STALE_CONTENTTYPES == "True" ]] && red django-admin remove_stale_contenttypes --noinput --include-stale-apps -v 3
+# shellcheck source=startup/common
+. /startup/common
+if [ "${REMOVE_STALE_CONTENTTYPES:-False}" = "True" ]
+then
+  red django-admin remove_stale_contenttypes --noinput --include-stale-apps -v 3
+else
+  echo "Set REMOVE_STALE_CONTENTTYPES=True to run django-admin remove_stale_contenttypes --noinput --include-stale-apps"
+fi
