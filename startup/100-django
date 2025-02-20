@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-if [ "$USE_UVICORN" == "True" ]; then
+if [ ${USE_UVICORN:-False} = "True" ]; then
 	uvicorn asgi:application --host 0.0.0.0 --port 5000 --app-dir "/startup"
 else
 	gunicorn wsgi -b 0.0.0.0:5000 --timeout 120 --workers=3 --threads=3 --worker-connections=1000 --pythonpath="/startup" --access-logfile - --error-logfile -
