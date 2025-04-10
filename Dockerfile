@@ -26,8 +26,6 @@ COPY startup /startup
 COPY apis_instance /app/
 COPY apis /usr/local/bin/
 
-RUN pip install --no-cache-dir setuptools==78.1.0 wheel==0.46.1 # Fix until https://github.com/docker-library/official-images/issues/18808 is resolved
-
 RUN cp startup/* /startup || true && \
 	groupadd --gid $USER_GID $USERNAME && \
 	useradd --uid $USER_UID --gid $USER_GID -m $USERNAME -s /usr/bin/bash && \
