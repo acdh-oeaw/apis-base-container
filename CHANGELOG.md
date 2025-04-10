@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.5](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.4...v0.6.5) (2025-04-10)
+
+
+### Reverts
+
+* "fix: pin setuptools and wheel" ([fdc0e6c](https://github.com/acdh-oeaw/apis-base-container/commit/fdc0e6c8572b163de272a1e3dd7e9aff1ffa01f4))
+
 ## [0.6.4](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.3...v0.6.4) (2025-04-09)
 
 
