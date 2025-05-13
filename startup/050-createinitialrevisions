@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-source /startup/common
-[[ $CREATE_INITIAL_REVISIONS == "True" ]] && red django-admin createinitialrevisions
+# shellcheck source=startup/common
+. /startup/common
+if [ "${CREATE_INITIAL_REVISIONS:-False}" = "True" ];
+then
+  red django-admin createinitialrevisions
+else
+  echo "Set CREATE_INITIAL_REVISIONS=True to enable django-admin createinitialrevisions"
+fi
