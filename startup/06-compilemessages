@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-source /startup/common
-[[ $COMPILE_MESSAGES == "True" ]] && red django-admin compilemessages
+# shellcheck source=startup/common
+. /startup/common
+if [ "${COMPILE_MESSAGES:-False}" = "True" ]
+then
+  red django-admin compilemessages
+else
+  echo "Set COMPILE_MESSAGES=True to run django-admin compilemessages"
+fi

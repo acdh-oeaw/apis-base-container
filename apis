@@ -21,4 +21,4 @@ if [ -z "${OTEL_SERVICE_NAME+x}" ]; then
   fi
 fi
 
-$CMD /usr/bin/run-parts /startup
+$CMD /usr/bin/env run-parts /startup

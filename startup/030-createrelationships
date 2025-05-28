@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-source /startup/common
-[[ $CREATE_RELATIONSHIPS == "True" ]] && red django-admin create_relationships
+# shellcheck source=startup/common
+. /startup/common
+if [ "${CREATE_RELATIONSHIPS:-False}" = "True" ]
+then
+  red django-admin create_relationships
+else
+  echo "Set CREATE_RELATIONSHIPS=True to run django-admin create_relationships"
+fi
