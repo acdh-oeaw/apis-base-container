@@ -7,7 +7,7 @@ if [ -n "$ARZ_TLS_CACERT" ]; then
 	  echo "-----END CERTIFICATE-----"
   } >> "$HOME"/CA.pem
   {
-	  echo "TLS_CIPHER_SUITE NORMAL:%VERIFY_ALLOW_SIGN_WITH_SHA1"
+	  echo "TLS_CIPHER_SUITE DEFAULT:@SECLEVEL=0"
 	  echo "TLS_CACERT $HOME/CA.pem"
   } >> "$HOME"/.ldaprc
 fi
