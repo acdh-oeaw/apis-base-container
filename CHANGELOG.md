@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.7.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.5...v0.7.0) (2025-07-28)
+
+
+### Features
+
+* **docker:** add procps package to image ([31554e2](https://github.com/acdh-oeaw/apis-base-container/commit/31554e2837793395face236c0f5b7a0ba2491af6))
+* **docker:** move from slim to alpine and use dual layer build ([bacd31d](https://github.com/acdh-oeaw/apis-base-container/commit/bacd31d21fc19a13087059992ffb8a6f24981fe9))
+* **startup:** make startup scripts POSIX & shellcheck conform ([64a2091](https://github.com/acdh-oeaw/apis-base-container/commit/64a20916155c33cdd5fdda0a794da7184c7302ae))
+
+
+### Bug Fixes
+
+* **apis:** use env on run-parts ([9a8b716](https://github.com/acdh-oeaw/apis-base-container/commit/9a8b716cedc9ac2297a6f6d5d624fb81f0aea430))
+* **startup:** update TLS_CIPHER_SUITE config for ldap ([e3105ce](https://github.com/acdh-oeaw/apis-base-container/commit/e3105ce87bc55b07e25a2a8cacfa9b30c18cd9ef))
+
 ## [0.6.5](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.4...v0.6.5) (2025-04-10)
 
 
