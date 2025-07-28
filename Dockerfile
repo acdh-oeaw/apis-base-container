@@ -40,7 +40,7 @@ COPY apis /usr/local/bin/
 COPY --from=compile-image /app/ /app/
 
 RUN adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app && \
-    apk add --no-cache --virtual .build-dependencies-in-virtual-world run-parts tmux postgresql-client libldap gettext git graphviz
+    apk add --no-cache --virtual .build-dependencies-in-virtual-world run-parts tmux postgresql-client libldap gettext git graphviz procps
 
 # ensures that the python output is sent straight to terminal (e.g. your container log)
 # without being first buffered and that you can see the output of your application (e.g. django logs)
