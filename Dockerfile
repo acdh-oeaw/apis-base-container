@@ -18,7 +18,7 @@ RUN adduser --disabled-password $USERNAME --home /app && \
 
 USER $USERNAME
 
-RUN pip install --user uvicorn gunicorn && pip install --user .
+RUN pip install --user uvicorn gunicorn && pip install --user --prefer-binary .
 
 
 
