@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.7.0...v0.8.0) (2025-08-29)
+
+
+### Features
+
+* **docker:** install build-base instead of individual packages ([5222e5e](https://github.com/acdh-oeaw/apis-base-container/commit/5222e5e50f824350ce2523b1ab131b314e9711e2))
+* **docker:** prefer binary packages if they are available ([ceaaf5c](https://github.com/acdh-oeaw/apis-base-container/commit/ceaaf5c573335762f777040441e2a0e356e4b181))
+
 ## [0.7.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.6.5...v0.7.0) (2025-07-28)
 
 
