@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.9.0...v0.9.1) (2025-09-16)
+
+
+### Bug Fixes
+
+* **Dockerfile:** add git in build step ([e8c2db7](https://github.com/acdh-oeaw/apis-base-container/commit/e8c2db7fbf43dd38ca9e7a415c953e3b894053ac))
+* **startup:** drop 030-createrelationships script ([5239fad](https://github.com/acdh-oeaw/apis-base-container/commit/5239fade3d89d54e8ab0de030aa4ffda8705c0db))
+
 ## [0.9.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.8.0...v0.9.0) (2025-08-29)
 
 
