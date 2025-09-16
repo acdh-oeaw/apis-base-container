@@ -14,7 +14,7 @@ ENV PIP_NO_CACHE_DIR=1
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 
 RUN adduser --disabled-password $USERNAME --home /app && \ 
-    apk add --no-cache --virtual .build-dependencies-in-virtual-world libpq-dev openldap-dev libsasl build-base linux-headers
+    apk add --no-cache --virtual .build-dependencies-in-virtual-world libpq-dev openldap-dev libsasl build-base linux-headers git
 
 USER $USERNAME
 
