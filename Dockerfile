@@ -1,4 +1,4 @@
-FROM python:3.11-alpine as compile-image
+FROM python:3.13-alpine as compile-image
 ARG USERNAME=app
 
 COPY apis_instance /app/
@@ -23,7 +23,7 @@ RUN pip install --user uvicorn gunicorn && pip install --user --prefer-binary .
 
 
 
-FROM python:3.11-alpine AS build-image
+FROM python:3.13-alpine AS build-image
 
 WORKDIR /app/
 
