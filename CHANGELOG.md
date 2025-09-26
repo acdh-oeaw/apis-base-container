@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.9.1...v0.10.0) (2025-09-26)
+
+
+### Features
+
+* **Dockerfile:** bump the base images to python 3.13 ([0379b31](https://github.com/acdh-oeaw/apis-base-container/commit/0379b3161f7de3f4db86f4fff9de56da85d7378b))
+
 ## [0.9.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.9.0...v0.9.1) (2025-09-16)
 
 
