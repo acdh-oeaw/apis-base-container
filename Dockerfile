@@ -1,4 +1,4 @@
-FROM python:3.13-alpine as compile-image
+FROM ghcr.io/astral-sh/uv:alpine3.23 as compile-image
 ARG USERNAME=app
 
 COPY apis_instance /app/
@@ -18,12 +18,10 @@ RUN adduser --disabled-password $USERNAME --home /app && \
 
 USER $USERNAME
 
-RUN pip install --user --prefer-binary .
+RUN uv sync
 
 
-
-
-FROM python:3.13-alpine AS build-image
+FROM ghcr.io/astral-sh/uv:alpine3.23 AS build-image
 
 WORKDIR /app/
 
@@ -48,8 +46,7 @@ RUN adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app
 ENV PYTHONUNBUFFERED 1
 ENV ENVIRONMENT prod
 ENV TESTING 0
-ENV PYTHONPATH=/app:/app/.local/lib/python3.11
-ENV PATH=$PATH:/app/.local/bin
+ENV PATH=$PATH:/app/.local/bin:/app/.venv/bin
 
 USER $USERNAME
 
