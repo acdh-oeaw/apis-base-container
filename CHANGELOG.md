@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.11.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.10.0...v0.11.0) (2026-05-11)
+
+
+### Features
+
+* **Dockerfile:** add mariadb client files ([dcbe2e8](https://github.com/acdh-oeaw/apis-base-container/commit/dcbe2e820606a5f7278fd90c19e82f8c7f6bd293))
+* **Dockerfile:** add socat ([50b23ef](https://github.com/acdh-oeaw/apis-base-container/commit/50b23ef20354c026e1861f2872ade8fa5c4ed1d0))
+* **Dockerfile:** don't install uvicorn & gunicorn by default ([a99769a](https://github.com/acdh-oeaw/apis-base-container/commit/a99769a93c2182d3468b0b4ac97e35d51db7ea6e))
+* **Dockerfile:** switch to uv ([6f8b43f](https://github.com/acdh-oeaw/apis-base-container/commit/6f8b43f37ccd0cfcea38abcbe01ed41524ecd384))
+
+
+### Bug Fixes
+
+* **Dockerfile:** give dir ownership to $USERNAME also in build step ([3423d87](https://github.com/acdh-oeaw/apis-base-container/commit/3423d87dc35eacd6223cb50d65307fc7561c4a7e))
+
 ## [0.10.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.9.1...v0.10.0) (2025-09-26)
 
 
