@@ -13,7 +13,7 @@ ENV PIP_NO_CACHE_DIR=1
 # disable version check of pip
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 
-RUN adduser --disabled-password $USERNAME --home /app && \ 
+RUN adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app && \
     apk add --no-cache --virtual .build-dependencies-in-virtual-world libpq-dev openldap-dev libsasl build-base linux-headers git
 
 USER $USERNAME
