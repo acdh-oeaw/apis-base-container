@@ -38,7 +38,7 @@ COPY apis /usr/local/bin/
 COPY --from=compile-image /app/ /app/
 
 RUN adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app && \
-    apk add --no-cache --virtual .build-dependencies-in-virtual-world run-parts tmux postgresql-client mariadb-client libldap gettext git graphviz procps socat
+    apk add --no-cache --virtual .build-dependencies-in-virtual-world ca-certificates tzdata run-parts tmux postgresql-client mariadb-client libldap gettext git graphviz procps socat
 
 # ensures that the python output is sent straight to terminal (e.g. your container log)
 # without being first buffered and that you can see the output of your application (e.g. django logs)
