@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.11.0...v0.11.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* **Dockerfile:** add ca-certificates & tzdata packages to image ([884f6f7](https://github.com/acdh-oeaw/apis-base-container/commit/884f6f732e69240ca61d8940b968e5530449205f))
+* **Dockerfile:** don't create virtual package when installing packages ([c3fc801](https://github.com/acdh-oeaw/apis-base-container/commit/c3fc8019b227eb5107132cf6b336ecd2fb49a2d4))
+
 ## [0.11.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.10.0...v0.11.0) (2026-05-11)
 
 
