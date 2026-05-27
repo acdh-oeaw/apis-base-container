@@ -18,7 +18,7 @@ RUN adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app
 
 USER $USERNAME
 
-RUN uv sync
+RUN uv sync && echo "export PATH=$PATH:/app/.venv/bin" > /app/.profile
 
 
 FROM ghcr.io/astral-sh/uv:alpine3.23 AS build-image
