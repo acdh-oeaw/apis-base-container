@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.2](https://github.com/acdh-oeaw/apis-base-container/compare/v0.11.1...v0.11.2) (2026-06-10)
+
+
+### Bug Fixes
+
+* **Dockerfile:** add `/app/.venv/bin` to default PATH of $USERNAME ([d9f1868](https://github.com/acdh-oeaw/apis-base-container/commit/d9f1868c445f4e37cdb2e2c676c50c5afd8e8e7d))
+* **Dockerfile:** add mariadb-connector-c to base packages ([c309d83](https://github.com/acdh-oeaw/apis-base-container/commit/c309d833e41ef1226769a78cf8779960a331195f))
+
 ## [0.11.1](https://github.com/acdh-oeaw/apis-base-container/compare/v0.11.0...v0.11.1) (2026-05-20)
 
 
