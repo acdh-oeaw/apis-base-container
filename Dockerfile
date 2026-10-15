@@ -37,8 +37,9 @@ COPY startup /startup
 COPY apis /usr/local/bin/
 COPY --from=compile-image /app/ /app/
 
-RUN adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app && \
-    apk add --no-cache ca-certificates tzdata run-parts tmux postgresql-client mariadb-client mariadb-connector-c libldap gettext git graphviz procps socat vim zsh zsh-vcs
+RUN apk add --no-cache ca-certificates tzdata run-parts tmux postgresql-client mariadb-client mariadb-connector-c libldap gettext git graphviz procps socat vim zsh zsh-vcs && \
+    wget -O /app/.tmux.conf https://grml.org/console/tmux.conf && wget -O /app/.vimrc https://grml.org/console/vimrc && wget -O /app/.zshrc https://grml.org/console/zshrc && \
+    adduser --disabled-password $USERNAME --home /app && chown -R $USERNAME /app
 
 # ensures that the python output is sent straight to terminal (e.g. your container log)
 # without being first buffered and that you can see the output of your application (e.g. django logs)
