@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.0](https://github.com/acdh-oeaw/apis-base-container/compare/v0.11.2...v0.12.0) (2026-10-15)
+
+
+### Features
+
+* **Dockerfile:** add vim & zsh to installed packages ([68358d9](https://github.com/acdh-oeaw/apis-base-container/commit/68358d979ace6469f721af3c2c356aaaad32a4a3))
+* **Dockerfile:** reorder setup steps and install default configs ([2e9ffac](https://github.com/acdh-oeaw/apis-base-container/commit/2e9ffaca140e78b505e7f939e8a8f8e910fc61f4))
+
 ## [0.11.2](https://github.com/acdh-oeaw/apis-base-container/compare/v0.11.1...v0.11.2) (2026-06-10)
 
 
